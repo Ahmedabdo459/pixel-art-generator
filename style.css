@@ -1,0 +1,225 @@
+/* Clean & modern style for Pixel Art Generator */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", monospace;
+  }
+  
+  body {
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 0.3s ease;
+  }
+  
+  /* WRAPPER */
+  .wrapper {
+    background: #ffffff;
+    width: 85vmin;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  header h1 {
+    font-size: 1.6rem;
+    color: #2e7d32;
+    margin-bottom: 8px;
+  }
+  
+  header p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  
+  #theme-toggle {
+    background: #43a047;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #theme-toggle:hover {
+    background: #388e3c;
+  }
+  
+  /* OPTIONS */
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .opt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  
+  label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  input[type="range"] {
+    width: 140px;
+    accent-color: #43a047;
+  }
+  
+  /* BUTTONS */
+  button {
+    background: #43a047;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 7px 14px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  button:hover {
+    background: #388e3c;
+    transform: translateY(-1px);
+  }
+  
+  /* COLOR PICKER */
+  input[type="color"] {
+    appearance: none;
+    border: none;
+    background: transparent;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 6px;
+    border: 2px solid #999;
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 6px;
+    border: 2px solid #999;
+  }
+  
+  /* CANVAS AREA */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 250px;
+    background: #fafafa;
+    transition: 0.3s ease;
+  }
+  
+  .container:hover {
+    border-color: #43a047;
+  }
+  
+  /* PIXEL GRID */
+  .gridCol {
+    height: 1.1em;
+    width: 1.1em;
+    border: 1px solid #ddd;
+    background: transparent;
+    transition: background 0.1s ease;
+  }
+  
+  .gridRow {
+    display: flex;
+  }
+  
+  /* DARK MODE */
+  body.dark {
+    background: #121212;
+  }
+  
+  body.dark .wrapper {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  body.dark .container {
+    background: #2c2c2c;
+    border-color: #444;
+  }
+  
+  body.dark label,
+  body.dark span,
+  body.dark header p {
+    color: #ddd;
+  }
+  
+  body.dark header h1 {
+    color: #81c784;
+  }
+  
+  body.dark button {
+    background: #2e7d32;
+  }
+  
+  body.dark button:hover {
+    background: #43a047;
+  }
+  
+  body.dark input[type="color"]::-webkit-color-swatch {
+    border: 2px solid #888;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .wrapper {
+      width: 95vmin;
+      padding: 25px 15px;
+    }
+    input[type="range"] {
+      width: 100px;
+    }
+    .gridCol {
+      height: 0.9em;
+      width: 0.9em;
+    }
+  }
+  #download-btn {
+    background: #1565c0;
+  }
+  #download-btn:hover {
+    background: #0d47a1;
+  }
+    
