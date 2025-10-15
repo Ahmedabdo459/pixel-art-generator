@@ -48,5 +48,6 @@ pixel-art-generator/
 └── main.js
 
 License
-
+Live Demo
+View the live version here:https://ahmedabdo459.github.io/pixel-art-generator/
 This project is created for learning purposes. You are free to modify and use it.
